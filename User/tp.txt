@@ -1,0 +1,375 @@
+<?php include 'header1.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krishna Car Parts | Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { margin:0; font-family:'Poppins', sans-serif; background:#111; color:#fff; }
+
+    /* Hero Section */
+    .hero {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      height:100vh;
+      background:#111 url('assets/images/car-bg.jpg') right center/cover no-repeat;
+      position:relative;
+    }
+
+    .hero::before {
+      content:"";
+      position:absolute;
+      left:0;
+      top:0;
+      width:50%;
+      height:100%;
+      background:linear-gradient(135deg, #e63946, #ff4d6d);
+      z-index:1;
+    }
+
+    .hero-content {
+      position:relative;
+      z-index:2;
+      width:50%;
+      padding:80px;
+      color:#fff;
+    }
+
+    .hero-content h1 {
+      font-size:3.5rem;
+      font-weight:800;
+      margin-bottom:20px;
+      line-height:1.2;
+    }
+
+    .hero-content p {
+      font-size:1.2rem;
+      margin-bottom:25px;
+      color:#f5f5f5;
+    }
+
+    .btn-primary {
+      background:#fff;
+      color:#e63946;
+      padding:14px 35px;
+      border:none;
+      border-radius:50px;
+      font-weight:600;
+      cursor:pointer;
+      transition:all .3s;
+      text-transform:uppercase;
+    }
+    .btn-primary:hover { background:#222; color:#fff; }
+
+    /* Contact Info Card */
+    .contact-box {
+      position:absolute;
+      bottom:40px;
+      right:40px;
+      background:rgba(0,0,0,0.7);
+      padding:20px 30px;
+      border-radius:10px;
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    .contact-box div {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-size:0.95rem;
+      color:#fff;
+    }
+
+    .contact-box i {
+      color:#e63946;
+      font-size:1.2rem;
+    }
+
+    @media(max-width:900px){
+      .hero { flex-direction:column; justify-content:center; text-align:center; }
+      .hero::before { width:100%; height:50%; }
+      .hero-content { width:100%; padding:40px; }
+      .contact-box { position:relative; bottom:0; right:0; margin-top:30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Cheap Car Spare Parts</h1>
+      <p>We can find any spare part for your car. Trusted by thousands in Surat & beyond.</p>
+      <button class="btn-primary">Request a Quote</button>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-box">
+      <div><i class="fas fa-phone"></i> <span><strong>Call Us 24/7</strong><br>+91 98765 43210</span></div>
+      <div><i class="fas fa-map-marker-alt"></i> <span><strong>We are Here</strong><br> Surat, Gujarat</span></div>
+    </div>
+  </section>
+
+<?php include 'footer.php'; ?>
+</body>
+</html>
+
+
+
+-------------------------------------------------------------------------
+
+<?php
+include 'header1.php'; // keep your existing header
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Krishna Car Parts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('assets/images/car-banner.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+        }
+
+        /* Company Info */
+        .about {
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #d32f2f;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: #d32f2f;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-container {
+            padding: 20px 40px;
+            position: relative;
+            background: inherit;
+            width: 50%;
+        }
+
+        .timeline-container.left {
+            left: 0;
+        }
+
+        .timeline-container.right {
+            left: 50%;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background: #fff;
+            border: 4px solid #d32f2f;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-container.right::after {
+            left: -13px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            color: #d32f2f;
+        }
+
+        /* Owners/Partners Cards */
+        .team {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .team h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .team-cards {
+            display: flex;
+            justify-content: center;
+            /* Centers the card */
+            align-items: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 55px;
+            height: 350px;  
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #f39c12;
+            /* highlight circle border */
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .timeline-container {
+                width: 100%;
+                left: 0;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-container.right {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>About Krishna Car Parts</h1>
+        <p>Your trusted partner in automotive excellence</p>
+    </div>
+
+    <!-- About -->
+    <section class="about">
+        <h2>Who We Are</h2>
+        <p>Established in 2025 in Surat, Krishna Car Parts has quickly become a leading name in the automotive industry. We specialize in providing high-quality car parts and accessories that meet the needs of every customer, from individual car owners to large auto workshops.</p>
+        <p>Our mission is to deliver reliability, innovation, and customer satisfaction by offering genuine products at the best value.</p>
+    </section>
+
+    <!-- Timeline -->
+    <div class="timeline">
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h3>2025 - Establishment</h3>
+                <p>Krishna Car Parts was founded in Surat with a vision to revolutionize the auto parts industry.</p>
+            </div>
+        </div>
+        <div class="timeline-container right">
+            <div class="timeline-content">
+                <h3>2026 - Growth</h3>
+                <p>Expanded partnerships with leading manufacturers and suppliers across India.</p>
+            </div>
+        </div>
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h3>2027 - Future Vision</h3>
+                <p>Planning to introduce e-commerce solutions and international collaborations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Owners/Partners -->
+    <section class="team">
+        <h2>Our Founders & Partners</h2>
+        <div class="team-cards">
+            <div class="card">
+                <img src="assets/images/avatar-4.png" alt="Owner 1">
+                <h3>Krish Patel</h3>
+                <p>Founder & CEO</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<?php
+include 'footer.php'; // keep your existing footer
+?>
