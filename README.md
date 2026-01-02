@@ -134,7 +134,7 @@ Krishna Car Parts is a **modern, full-featured e-commerce platform** specificall
 - **MySQL 5.7+** - Database management
 - **Modern Browser** - Chrome, Firefox, Safari, Edge
 
-### ⚡ Quick Setup
+### ⚡ Installation Steps
 
 1. **Clone the Repository**
    ```bash
@@ -143,13 +143,8 @@ Krishna Car Parts is a **modern, full-featured e-commerce platform** specificall
    ```
 
 2. **Setup Local Server**
-   ```bash
-   # Move to XAMPP htdocs
-   cp -r . /xampp/htdocs/KCP/
-   
-   # Start Apache & MySQL
-   # Via XAMPP Control Panel
-   ```
+   - Move project to XAMPP htdocs folder
+   - Start Apache & MySQL via XAMPP Control Panel
 
 3. **Database Configuration**
    ```sql
@@ -295,11 +290,9 @@ We welcome contributions from the community! Here's how you can help:
 **Need Help? We're Here for You!**
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@krishnacarparts.com)
-[![Phone](https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+919876543210)
 [![Location](https://img.shields.io/badge/Location-FF5722?style=for-the-badge&logo=google-maps&logoColor=white)](https://maps.google.com)
 
 **📍 Address:** Pal, Surat, Gujarat, India  
-**📞 Phone:** +91 98765 43210  
 **📧 Email:** info@krishnacarparts.com
 
 </div>
