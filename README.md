@@ -134,42 +134,6 @@ Krishna Car Parts is a **modern, full-featured e-commerce platform** specificall
 - **MySQL 5.7+** - Database management
 - **Modern Browser** - Chrome, Firefox, Safari, Edge
 
-### ⚡ Installation Steps
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/henil0109/KRISHNA-CAR-PARTS.git
-   cd KRISHNA-CAR-PARTS
-   ```
-
-2. **Setup Local Server**
-   - Move project to XAMPP htdocs folder
-   - Start Apache & MySQL via XAMPP Control Panel
-
-3. **Database Configuration**
-   ```sql
-   -- Create database
-   CREATE DATABASE KCP_db;
-   
-   -- Import structure (auto-created on first run)
-   -- Tables: users_tbl, products_tbl, orders_tbl, etc.
-   ```
-
-4. **Configure Connection**
-   ```php
-   // Admin/connection.php
-   $host = "localhost";
-   $username = "root";
-   $password = "";
-   $database = "KCP_db";
-   ```
-
-5. **Launch Application**
-   ```
-   🌐 User Portal: http://localhost/KCP/User/
-   ⚙️ Admin Panel: http://localhost/KCP/Admin/
-   ```
-
 ### 🔑 Default Credentials
 ```
 👤 Admin Login:
