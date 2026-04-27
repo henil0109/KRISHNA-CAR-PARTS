@@ -5,5 +5,3 @@ dockerfilePath = "./Dockerfile"
 [deploy]
 startCommand = "apache2-foreground"
 healthcheckPath = "/KRISHNA-CAR-PARTS/User/index.php"
-restartPolicyType = "on-failure"
-restartPolicyMaxRetries = 3
