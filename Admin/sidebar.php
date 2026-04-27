@@ -1,4 +1,4 @@
-<head>
+﻿<head>
 	<!-- Theme Style CSS -->
 	<link rel="stylesheet" href="../assets/css/dark-theme.css" />
 	<link rel="stylesheet" href="../assets/css/semi-dark.css" />
@@ -184,7 +184,7 @@
 		$(document).ready(function() {
 			// Reinitialize MetisMenu with proper settings
 			$('#menu').metisMenu({
-				toggle: true,
+				toggle: false,
 				preventDefault: true
 			});
 		});

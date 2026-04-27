@@ -1,4 +1,19 @@
-*.log
-*.tmp
+﻿# Uploaded files (local only)
+Admin/uploads/
+User/uploads/
+
+# Environment files
+.env
+.env.local
+
+# OS generated
 .DS_Store
 Thumbs.db
+
+# Local debug files
+debug_images.php
+check_tables.php
+add-sample-users.php
+
+# Logs
+*.log

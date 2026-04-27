@@ -151,7 +151,7 @@ $user = mysqli_fetch_assoc($result);
                         <div class="info-card mt-4">
                             <h5><i class="fas fa-info-circle me-2"></i>Account Information</h5>
                             <p><strong>Member Since:</strong> <?php echo date('F j, Y', strtotime($user['created_at'])); ?></p>
-                            <p><strong>Last Updated:</strong> <?php echo date('F j, Y g:i A', strtotime($user['updated_at'])); ?></p>
+                            <p><strong>Last Updated:</strong> <?php echo (!empty($user['updated_at']) && $user['updated_at'] !== '0000-00-00 00:00:00') ? date('F j, Y g:i A', strtotime($user['updated_at'])) : '<em>Never updated</em>'; ?></p>
                         </div>
                         
                         <div class="text-center mt-4">

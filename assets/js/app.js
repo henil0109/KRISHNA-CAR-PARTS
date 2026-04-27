@@ -1,4 +1,4 @@
-$(function() {
+﻿$(function() {
 	"use strict";
 	new PerfectScrollbar(".header-message-list"), new PerfectScrollbar(".header-notifications-list"), $(".mobile-search-icon").on("click", function() {
 		$(".search-bar").addClass("full-search-bar")
@@ -25,7 +25,7 @@ $(function() {
 				return this.href == e
 			}).addClass("").parent().addClass("mm-active"); o.is("li");) o = o.parent("").addClass("mm-show").parent("").addClass("mm-active")
 	}), $(function() {
-		$("#menu").metisMenu()
+		$("#menu").metisMenu({toggle:false})
 	}), $(".chat-toggle-btn").on("click", function() {
 		$(".chat-wrapper").toggleClass("chat-toggled")
 	}), $(".chat-toggle-btn-mobile").on("click", function() {
