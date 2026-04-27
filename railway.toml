@@ -4,4 +4,4 @@ dockerfilePath = "./Dockerfile"
 
 [deploy]
 startCommand = "apache2-foreground"
-healthcheckPath = "/KRISHNA-CAR-PARTS/User/index.php"
+healthcheckPath = "/User/index.php"
